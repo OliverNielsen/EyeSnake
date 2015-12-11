@@ -12,6 +12,8 @@
 		A696F64F1C1AD52100D20DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A696F64D1C1AD52100D20DD1 /* Main.storyboard */; };
 		A696F6511C1AD52100D20DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A696F6501C1AD52100D20DD1 /* Assets.xcassets */; };
 		A696F6541C1AD52100D20DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A696F6521C1AD52100D20DD1 /* LaunchScreen.storyboard */; };
+		A696F65E1C1ADB2B00D20DD1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A696F65C1C1ADB2B00D20DD1 /* SnapKit.framework */; };
+		A696F65F1C1ADB2B00D20DD1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A696F65D1C1ADB2B00D20DD1 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A696F6501C1AD52100D20DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A696F6531C1AD52100D20DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A696F6551C1AD52100D20DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A696F65C1C1ADB2B00D20DD1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		A696F65D1C1ADB2B00D20DD1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A696F65E1C1ADB2B00D20DD1 /* SnapKit.framework in Frameworks */,
+				A696F65F1C1ADB2B00D20DD1 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +44,8 @@
 		A696F63D1C1AD52100D20DD1 = {
 			isa = PBXGroup;
 			children = (
+				A696F65C1C1ADB2B00D20DD1 /* SnapKit.framework */,
+				A696F65D1C1ADB2B00D20DD1 /* SwiftyJSON.framework */,
 				A696F6481C1AD52100D20DD1 /* SnakeEye */,
 				A696F6471C1AD52100D20DD1 /* Products */,
 			);
@@ -74,6 +82,7 @@
 				A696F6421C1AD52100D20DD1 /* Sources */,
 				A696F6431C1AD52100D20DD1 /* Frameworks */,
 				A696F6441C1AD52100D20DD1 /* Resources */,
+				A696F65B1C1ADA4E00D20DD1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +138,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A696F65B1C1ADA4E00D20DD1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A696F6421C1AD52100D20DD1 /* Sources */ = {
@@ -247,6 +274,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SnakeEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OliverNielsen.SnakeEye;
@@ -258,6 +289,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SnakeEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OliverNielsen.SnakeEye;
