@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A611D3F31C1D9E8800D2D178 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611D3F21C1D9E8800D2D178 /* Track.swift */; };
+		A611D3F71C1DAE7300D2D178 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611D3F61C1DAE7300D2D178 /* MainViewController.swift */; };
+		A611D3F91C1DB13200D2D178 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611D3F81C1DB13200D2D178 /* MainViewModel.swift */; };
+		A611D3FC1C1DB73500D2D178 /* EyeTrackerTestDataArray.json in Resources */ = {isa = PBXBuildFile; fileRef = A611D3FB1C1DB73500D2D178 /* EyeTrackerTestDataArray.json */; };
+		A611D3FF1C1DCA9E00D2D178 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A611D3FD1C1DCA9E00D2D178 /* ReactiveCocoa.framework */; };
+		A611D4001C1DCA9E00D2D178 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A611D3FE1C1DCA9E00D2D178 /* Result.framework */; };
+		A611D4021C1DD26300D2D178 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611D4011C1DD26300D2D178 /* IntroViewController.swift */; };
 		A696F64A1C1AD52100D20DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696F6491C1AD52100D20DD1 /* AppDelegate.swift */; };
 		A696F64C1C1AD52100D20DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696F64B1C1AD52100D20DD1 /* ViewController.swift */; };
-		A696F64F1C1AD52100D20DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A696F64D1C1AD52100D20DD1 /* Main.storyboard */; };
 		A696F6511C1AD52100D20DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A696F6501C1AD52100D20DD1 /* Assets.xcassets */; };
 		A696F6541C1AD52100D20DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A696F6521C1AD52100D20DD1 /* LaunchScreen.storyboard */; };
 		A696F65E1C1ADB2B00D20DD1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A696F65C1C1ADB2B00D20DD1 /* SnapKit.framework */; };
@@ -17,10 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A611D3F21C1D9E8800D2D178 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		A611D3F61C1DAE7300D2D178 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A611D3F81C1DB13200D2D178 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A611D3FB1C1DB73500D2D178 /* EyeTrackerTestDataArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EyeTrackerTestDataArray.json; sourceTree = "<group>"; };
+		A611D3FD1C1DCA9E00D2D178 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		A611D3FE1C1DCA9E00D2D178 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		A611D4011C1DD26300D2D178 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		A696F6461C1AD52100D20DD1 /* SnakeEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnakeEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A696F6491C1AD52100D20DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A696F64B1C1AD52100D20DD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A696F64E1C1AD52100D20DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A696F6501C1AD52100D20DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A696F6531C1AD52100D20DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A696F6551C1AD52100D20DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,15 +47,63 @@
 			files = (
 				A696F65E1C1ADB2B00D20DD1 /* SnapKit.framework in Frameworks */,
 				A696F65F1C1ADB2B00D20DD1 /* SwiftyJSON.framework in Frameworks */,
+				A611D3FF1C1DCA9E00D2D178 /* ReactiveCocoa.framework in Frameworks */,
+				A611D4001C1DCA9E00D2D178 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A611D3EE1C1D9B8400D2D178 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A611D3F21C1D9E8800D2D178 /* Track.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A611D3EF1C1D9B9600D2D178 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A611D3FB1C1DB73500D2D178 /* EyeTrackerTestDataArray.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A611D3F01C1D9B9F00D2D178 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A696F64B1C1AD52100D20DD1 /* ViewController.swift */,
+				A611D3F61C1DAE7300D2D178 /* MainViewController.swift */,
+				A611D4011C1DD26300D2D178 /* IntroViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A611D3F11C1D9BB300D2D178 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A696F6501C1AD52100D20DD1 /* Assets.xcassets */,
+				A696F6521C1AD52100D20DD1 /* LaunchScreen.storyboard */,
+				A696F6551C1AD52100D20DD1 /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		A611D3FA1C1DB5F700D2D178 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A611D3F81C1DB13200D2D178 /* MainViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 		A696F63D1C1AD52100D20DD1 = {
 			isa = PBXGroup;
 			children = (
+				A611D3FD1C1DCA9E00D2D178 /* ReactiveCocoa.framework */,
+				A611D3FE1C1DCA9E00D2D178 /* Result.framework */,
 				A696F65C1C1ADB2B00D20DD1 /* SnapKit.framework */,
 				A696F65D1C1ADB2B00D20DD1 /* SwiftyJSON.framework */,
 				A696F6481C1AD52100D20DD1 /* SnakeEye */,
@@ -63,11 +123,11 @@
 			isa = PBXGroup;
 			children = (
 				A696F6491C1AD52100D20DD1 /* AppDelegate.swift */,
-				A696F64B1C1AD52100D20DD1 /* ViewController.swift */,
-				A696F64D1C1AD52100D20DD1 /* Main.storyboard */,
-				A696F6501C1AD52100D20DD1 /* Assets.xcassets */,
-				A696F6521C1AD52100D20DD1 /* LaunchScreen.storyboard */,
-				A696F6551C1AD52100D20DD1 /* Info.plist */,
+				A611D3FA1C1DB5F700D2D178 /* ViewModels */,
+				A611D3EE1C1D9B8400D2D178 /* Models */,
+				A611D3EF1C1D9B9600D2D178 /* Resources */,
+				A611D3F01C1D9B9F00D2D178 /* ViewControllers */,
+				A611D3F11C1D9BB300D2D178 /* Other */,
 			);
 			path = SnakeEye;
 			sourceTree = "<group>";
@@ -131,9 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A611D3FC1C1DB73500D2D178 /* EyeTrackerTestDataArray.json in Resources */,
 				A696F6541C1AD52100D20DD1 /* LaunchScreen.storyboard in Resources */,
 				A696F6511C1AD52100D20DD1 /* Assets.xcassets in Resources */,
-				A696F64F1C1AD52100D20DD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +208,8 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			outputPaths = (
 			);
@@ -162,22 +224,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A611D3F91C1DB13200D2D178 /* MainViewModel.swift in Sources */,
 				A696F64C1C1AD52100D20DD1 /* ViewController.swift in Sources */,
+				A611D3F31C1D9E8800D2D178 /* Track.swift in Sources */,
+				A611D4021C1DD26300D2D178 /* IntroViewController.swift in Sources */,
 				A696F64A1C1AD52100D20DD1 /* AppDelegate.swift in Sources */,
+				A611D3F71C1DAE7300D2D178 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A696F64D1C1AD52100D20DD1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A696F64E1C1AD52100D20DD1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A696F6521C1AD52100D20DD1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -279,6 +337,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SnakeEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OliverNielsen.SnakeEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +353,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SnakeEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OliverNielsen.SnakeEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -319,6 +379,7 @@
 				A696F65A1C1AD52100D20DD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
